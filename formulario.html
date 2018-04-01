@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <fieldset>
+        <legend>DATOS DEL TRABAJADOR</legend>
+        <form action="" method="GET" autocomplete="off">
+            <label for="apepat">Apellido Paterno:</label>
+            <input type="text" name="apepat" id="apepat" placeholder="Ingrese Apellido Paterno" size="30" maxlength="30" value="" > <br>
+            <label for="apemat">Apellido Materno:</label>
+            <input type="text" name="apemat" id="apemat" placeholder="Ingrese Apellido Materno" size="30" maxlength="30" value="" ><br>
+            <label for="fecnac">Fecha Nac:</label>
+            <input type="date" ><br>
+            <label for="genero">Género:</label>
+            <input type="radio" name="genero" id="genero" value="M" checked> Masculino
+            <input type="radio" name="genero" id="genero" value="F"> Femenino <br>
+            <label for="cursos">Cursos:</label>
+            <input type="checkbox" name="cursos[]" value="M"> Matemática
+            <input type="checkbox" name="cursos[]" value="L"> LENGUAJE
+            <input type="checkbox" name="cursos[]" value="F"> FISICA<br>
+            <label for="estciv">Estado Civil:</label>
+            <select name="estciv" id="estciv">
+                <option value="S">Soltero</option>
+                <option value="C">Casado</option>
+                <option value="V">Viudo</option>
+                <option value="D">Divorciado</option>
+            </select><br>
+            <label for="estciv">Estado Civil:</label>
+            <select name="estciv" id="estciv1" multiple size="3" >
+                <option value="S">Soltero</option>
+                <option value="C">Casado</option>
+                <option value="V">Viudo</option>
+                <option value="A">Divorciado</option>
+                <option value="B">Otro</option>
+                <option value="C">Otro Caso</option>
+                <option value="E">Otro Caso Nuevo</option>
+                <option value="G">Nuevo</option>
+            </select><br>
+            <label for="observaciones">Observaciones:</label>
+            <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Ingrese obervaciones"></textarea><br>
+            <hr>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+    <!-- COMENTARIO -->
+</body>
+</html>
